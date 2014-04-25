@@ -1,0 +1,26 @@
+@import 'jeet/index';
+@import 'normalize';
+
+@include edit();
+
+header { 
+  @include center(1040px);
+
+  h1 { @include col(1); }
+}
+
+section {
+  @include center(1040px);
+}
+div {
+  @include col(1/4, $cycle: 4);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-height: 100px;
+}
+
+footer {
+  @include center(1040px);
+
+  p { @include col(1); }
+}
